@@ -1,3 +1,6 @@
+import { Negro , Verde , Rojo , Gris } from "./color";
+import { Fx,Solve,StartEjercicios } from "./FX";
+
 
 const price = document.querySelector("#price");
 const output = document.querySelector(".price-output");
@@ -44,7 +47,6 @@ const Fx = (n,k) => {
     }
     return operation.substring(0,operation.length - 1);
 }
-
 const Solve = (value,price,time) => {
     resul = Fx(value,price)
     pt.innerHTML = resul
@@ -66,7 +68,6 @@ const Solve = (value,price,time) => {
 
     }, 1000);
 }
-
 //FX de modo contra tiempo
 let resul2
 let correctas = 0
@@ -93,10 +94,6 @@ const StartEjercicios = (value,price,time) => {
 }
 
 
-const Negro = () => {return '#000'}
-const Verde = () => {return '#0f0'}
-const Rojo = () => {return '#f00'}
-const Gris = () => {return '#111'}
 
 
 const input = document.querySelector('.input')
