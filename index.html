@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="menuConfig.js"></script>
+    <script defer src="FX.js"></script>
+    <script defer src="colores.js"></script>
+    <script defer src="script.js"></script>
+    <title>Entrenador a1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">MENU
+            <div class="menu-a">
+                <div class="menu-a-box">
+                    <div>Numero de cifras:</div>
+                    <input type="range" name="price" id="price" min="1" max="5" value="1" class="range-n"/>
+                    <output class="price-output" for="price"></output>
+                </div>
+                
+                <div class="menu-a-box">
+                    <div>Numero de Numeros:</div>
+                    <input type="range" name="value" id="value" min="2" max="5" value="2" class="range-n"/>
+                    <output class="value-output" for="value"></output>
+                </div>
+
+                <div class="menu-a-box">
+                    <div>tiempo</div>
+                    <input type="range" name="time" id="time" min="10" max="120" value="30" class="range-n"/>
+                    <output class="time-output" for="time"></output>
+                </div>
+            </div>
+        </div>
+        <div class="time"></div>
+        <div class="Contra-time">Contra tiempo</div>
+        <div class="box">
+            <div class="btn" id="btn">GENERAR</div>
+            <div class="pantalla" id="pt"></div>
+            <input class="input" autocomplete="off" placeholder="Tu Respuesta aqui"></input>
+            <div class="comprovacion" id="cmp">CONPROVACION</div>
+        </div>
+        <div class="time2"></div>
+        <div class="box2">
+            <div class="btn" id="btn2">COMENZAR</div>
+            <div class="pantalla" id="pt2">Modo contra tiempo</div>
+            <input class="input" id="input2" autocomplete="off" placeholder="Tu Respuesta aqui"></input>
+            <div class="comprovacion" id="cmp2">CONPROVACION</div>
+        </div>
+    </div>
+</body>
+</html>

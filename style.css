@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.container {
+    user-select: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+.box {
+    position: relative;
+    width: 40%;
+    height: 40vh;
+    color: #fff;
+    border-radius: 12px;
+
+}
+.btn {
+    cursor: pointer;
+    position: absolute;
+    height:1.5rem;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    border:1px solid #fff;
+    border-radius: 12px;
+    &:hover{
+        background-color:#aaa5;
+    }
+}
+.pantalla {
+    margin-top:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #fff;
+    border-radius:12px;
+    height: 50%;
+}
+
+.menu-a{
+    display: none;
+    width:15vw;
+}
+.menu{
+    color: #fff;
+    position: absolute;
+    height:2.5rem;
+    width:5vw;
+    top: 0;
+    left: 0;
+    padding:7px;
+    cursor: default;
+    transition: all .3s;
+    &:hover{
+        color: #000;
+        background-color:#aaa;
+        height: 100vh;
+        width:15vw;
+        border-radius:12px;
+        .menu-a{
+            display: block;
+            color: #000;
+        }
+    }
+}
+
+.range-n {
+    background-color: #000;
+}
+
+
+.input {
+    
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    height:2.5rem;
+    width: 100%;
+    background-color: #222;
+    border: 1px solid #fff;
+    border-radius:12px;
+    &::placeholder{
+        color:#fff;
+    }
+}
+
+.price-output {
+    display: inline;
+}
+
+
+.comprovacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height:1.6rem;
+    margin-top: 10px;
+    width: 100%;
+    border:1px solid #fff;
+    border-radius:6px;
+    cursor: pointer;
+    &:hover {
+        background-color:#00f4;
+    }
+}
+
+.menu-a-box {
+    margin-top: 15px;
+}
+
+
+.time,
+.time2 {
+    color:#fff;
+    position: absolute;
+    top:10%;
+}
+
+
+.Contra-time{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    border:.5px solid #fff;
+    border-radius: 4px;
+    padding:4px;
+    cursor: pointer;
+}
+
+.box2 {
+    display: none;
+    position: relative;
+    width: 40%;
+    height: 40vh;
+    color: #fff;
+    border-radius: 12px;
+}
